@@ -14,7 +14,6 @@ import { LinearGradient } from "expo-linear-gradient";
 import Icon from "react-native-vector-icons/Ionicons";
 import { useTheme } from "react-native-paper";
 import { AuthContext } from "../components/context";
-import Users from "../models/users";
 import axios from 'axios'
 
 const api = axios.create({
