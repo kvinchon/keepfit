@@ -18,13 +18,11 @@ const SplashScreen = ({ navigation }) => {
     <View style={styles.container}>
       <StatusBar backgroundColor="#009387" barStyle="light-content" />
       <View style={styles.header}>
-        <Animatable.Image
-          animation="bounceIn"
-          duraton="1500"
-          source={require("../assets/icon.png")}
-          style={styles.logo}
-          resizeMode="stretch"
-        />
+      <Text style={[
+          styles.title, {
+            color: "#fff"
+          }
+        ]}>Welcome to KeepFit!</Text>
       </View>
       <Animatable.View
         style={[
@@ -43,13 +41,13 @@ const SplashScreen = ({ navigation }) => {
             },
           ]}
         >
-          Stay connected with everyone!
+          Stay in shape with us!
         </Text>
         <Text style={styles.text}>Sign in with account</Text>
         <View style={styles.button}>
           <TouchableOpacity onPress={() => navigation.navigate("SignInScreen")}>
             <LinearGradient
-              colors={["#08d4c4", "#01ab9d"]}
+              colors={["#50C2C9", "#01ab9d"]}
               style={styles.signIn}
             >
               <Text style={styles.textSign}>Get Started</Text>
@@ -67,7 +65,7 @@ const height_logo = height * 0.28;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#009387",
+    backgroundColor: "#50C2C9",
   },
   header: {
     flex: 2,

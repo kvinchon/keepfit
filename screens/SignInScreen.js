@@ -123,7 +123,7 @@ const SignInScreen = ({ navigation }) => {
     <View style={styles.container}>
       <StatusBar backgroundColor="#009387" barStyle="light-content" />
       <View style={styles.header}>
-        <Text style={styles.text_header}>Welcome!</Text>
+        <Text style={styles.text_header}>Welcome Back!</Text>
       </View>
       <Animatable.View
         animation="fadeInUpBig"
@@ -213,7 +213,7 @@ const SignInScreen = ({ navigation }) => {
           </Animatable.View>
         )}
         <TouchableOpacity>
-          <Text style={{ color: "#009387", marginTop: 15 }}>
+          <Text style={{ color: "#50C2C9", marginTop: 15 }}>
             Forgot password?
           </Text>
         </TouchableOpacity>
@@ -225,7 +225,7 @@ const SignInScreen = ({ navigation }) => {
             }}
           >
             <LinearGradient
-              colors={["#08d4c4", "#01ab9d"]}
+              colors={["#50C2C9", "#01ab9d"]}
               style={styles.signIn}
             >
               <Text
@@ -245,7 +245,7 @@ const SignInScreen = ({ navigation }) => {
             style={[
               styles.signIn,
               {
-                borderColor: "#009387",
+                borderColor: "#50C2C9",
                 borderWidth: 1,
                 marginTop: 15,
               },
@@ -255,7 +255,7 @@ const SignInScreen = ({ navigation }) => {
               style={[
                 styles.textSign,
                 {
-                  color: "#009387",
+                  color: "#50C2C9",
                 },
               ]}
             >
@@ -271,7 +271,7 @@ export default SignInScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#009387",
+    backgroundColor: "#50C2C9",
   },
   header: {
     flex: 1,

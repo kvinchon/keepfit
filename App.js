@@ -107,12 +107,14 @@ const App = () => {
       signIn: async (user) => {
         // setaccessToken('fgkj');
         // setIsLoading(false);
-        const { firstName, lastName, email, accessToken, roles } = user;
+        const { id, firstName, lastName, email, preferences, accessToken, roles } = user;
 
         try {
+          await AsyncStorage.setItem("id", id.toString());
           await AsyncStorage.setItem("firstName", firstName);
           await AsyncStorage.setItem("lastName", lastName);
           await AsyncStorage.setItem("email", email);
+          await AsyncStorage.setItem("preferences", JSON.stringify(preferences));
           await AsyncStorage.setItem("accessToken", accessToken);
         } catch (e) {
           console.log(e);
